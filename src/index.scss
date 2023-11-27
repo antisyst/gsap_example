@@ -1,0 +1,38 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-grotesk);
+  background: var(--color-black);
+}
+:root {
+  // COLORS
+  --color-white: #ffff;
+  --color-black: #000;
+
+  // FONTS
+  --font-grotesk: 'Clash Grotesk', sans-serif;
+  --font-display: 'Clash Display', sans-serif;
+;
+}
+a, button {
+  user-select: none;
+  cursor: pointer;
+}
+::selection {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+.cursor {
+  position: fixed;
+  width: 23px;
+  height: 23px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
